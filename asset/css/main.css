@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: 'Quicksand', sans-serif;
   box-sizing: inherit; }
@@ -70,7 +69,7 @@ html {
     color: #fff; } }
 
 .hero {
-  background-image: url("/asset/images/phông.png"), url("/asset/images/bg-hero.png");
+  background-image: url("../images/overlay.png"), url("../images/bg-hero.png");
   background-size: cover;
   height: 465px;
   text-align: center;
@@ -284,8 +283,10 @@ html {
 
 .middle {
   margin: 80px 0;
-  background: #fff;
-  overflow: hidden; }
+  background: #fff; }
+  @media (max-width: 1023px) {
+    .middle {
+      overflow: hidden; } }
   .middle__content-item {
     object-fit: cover;
     position: relative;

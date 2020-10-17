@@ -1,7 +1,11 @@
 .middle{
     margin: 80px 0;
     background: $white-color;
-    overflow: hidden;
+    // overflow: hidden;
+
+    @include responsive(MobileTablet) {
+        overflow: hidden;
+    }
 
     &__content{
         // margin-bottom: 80px;
