@@ -1,0 +1,48 @@
+.btn{
+    min-width: 170px;
+    min-height: 50px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 14px 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include responsive(Mobile) {
+        min-width: 250px;
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+    }
+
+    &:active{
+        outline: none;
+        transform: translateY(-1px);
+    }
+
+    &.btn--green{
+        background-color: #83c129;
+        box-shadow: 0 4px 0 #518719;
+        animation: leftShow linear 1s;
+
+        @include responsive(Mobile) {
+            box-shadow: unset;
+            margin-bottom: 10px;
+        }
+    }
+
+    &.btn--blue{
+        background-color: #068fd5;
+        box-shadow: 0 4px 0 #046b9f;
+        animation: rightShow linear 1s;
+
+        @include responsive(Mobile) {
+            box-shadow: unset;
+        }
+    }
+}

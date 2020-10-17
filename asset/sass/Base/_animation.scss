@@ -1,0 +1,59 @@
+@keyframes fadeIn {
+    to {
+        opacity: 0;
+    }
+    from {
+        opacity: 1;
+    }
+}
+
+@keyframes titleShow{
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+
+    }
+}
+
+@keyframes leftShow{
+    0% {
+        left: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+
+    }
+}
+
+@keyframes rightShow{
+    0% {
+        right: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+
+    }
+}
+
+@keyframes opacity{
+    0% {
+        opacity: 0;
+        color: #000;
+    }
+
+    100% {
+        opacity: 1;
+        color: $white-color;
+    }
+}

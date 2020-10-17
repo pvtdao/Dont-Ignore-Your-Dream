@@ -1,0 +1,38 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: inherit;
+    &::before,
+    &::after{
+        box-sizing: inherit;
+    }
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+
+body{
+    // background-color: red;
+    // overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header,
+.footer{
+    background: $bg-header-color url('/asset/images/bg-texture.jpg');
+    color: $white-color;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.flex-center{
+    @include flex-center();
+}

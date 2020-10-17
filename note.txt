@@ -1,0 +1,9 @@
+Mai fix:
+-hover button chính -> DONE
+-Giới hạn dòng chữ ở 6 khung hình giữa -> DONE
+-Thêm thẻ a vô chữ ở 3 ảnh cuối -> DONE
+-Danh mục footer hơi nhỏ, chật -> DONE
+-Hover 3 nút footer -> DONE
+Làm: 
+-Feature đang làm dở tablet.
+-Mobile (DONE)

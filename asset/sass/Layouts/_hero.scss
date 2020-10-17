@@ -1,0 +1,71 @@
+.hero{
+    // background: #333 url('/asset/images/bg-hero.png') no-repeat 50% 50%;
+    background-image: url('/asset/images/phông.png'), url('/asset/images/bg-hero.png');
+    background-size: cover;
+    height: 465px;
+    text-align: center;
+    color: #fff;
+    padding-top: 70px;
+    // overflow: hidden;
+
+    @include responsive(Tablet) {
+        margin-top: $header-height;
+    }
+
+    @include responsive(Mobile) {
+        height: auto;
+    }
+
+    &__title{
+        font-size: 5.2rem;
+        font-weight: bold;
+        margin: 0 0 45px;
+        position: relative;
+        transition: .3s all linear;
+        animation: titleShow linear 1s ;
+        
+        @include responsive(Mobile) {
+            font-size: 4rem;
+            line-height: 5rem;
+            margin: 10px 0;
+        }
+    }
+
+    &__main{
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 3.6rem;
+        max-width: 645px;
+        margin: 0 auto 70px;
+        text-align: center;
+        animation: opacity linear 1s;
+
+        @include responsive(Mobile) {
+            font-size: 2rem;
+            line-height: 2.6rem;
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        & b{
+            font-weight: 700;
+        }
+    }
+
+    &__more{
+        max-width: 450px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        @include responsive(Mobile) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+
+        }
+    }
+
+}

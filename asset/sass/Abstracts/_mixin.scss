@@ -1,0 +1,33 @@
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == Mobile {
+        @media (max-width: 739px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == MobileTablet {
+        @media (max-width: 1023px){
+            @content
+        };
+    }  
+
+    @if $breakpoint == Tablet {
+        @media (min-width: 740px) and (max-width: 1023px){
+            @content;
+        };
+    }
+
+    @if $breakpoint == PC {
+        @media (min-width: 1024px){
+            @content;
+        }
+    }
+}
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @content;
+}

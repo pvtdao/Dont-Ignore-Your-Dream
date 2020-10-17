@@ -1,0 +1,106 @@
+.feature{
+    padding: 35px 0;
+    overflow: hidden;
+
+    @include responsive(Tablet) {
+        flex-direction: column;
+    }
+
+    &-pc{
+        display: flex;
+        align-items: center;
+    }
+
+    &__title{
+        font-size: 1.6rem;
+        text-align: center;
+
+        @include responsive(Tablet){
+            margin-bottom: 10px;
+        }
+        
+        @include responsive(Mobile){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+
+        @include responsive(Tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__item{
+        display: inline-block;
+        height: 100%;
+        user-select: none;
+        padding: 5px 0px;     
+
+
+        &-link{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            filter: brightness(90%);
+            padding: 5px 5px;
+
+            @include responsive(Mobile) {
+                filter: brightness(-100%);
+            }
+
+
+            &:hover{
+                filter: brightness(-100%);
+            }
+        }
+
+        &-img{
+
+        }
+    }
+
+    &__mobile{
+        
+        &-main{
+            
+            &-content{
+                
+                @include responsive(Tablet){
+                    &:nth-child(odd){
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    &:nth-child(even){
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+                
+            }
+        }
+
+        &-content{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+
+            &:nth-last-child(){
+                border: 1px solid #000;
+            }
+
+            @include responsive(Mobile) {
+                display: flex;
+                justify-content: center;
+                padding: 8px 0;
+            }
+        }
+    }
+}

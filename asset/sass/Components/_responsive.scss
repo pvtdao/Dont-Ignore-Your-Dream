@@ -1,0 +1,24 @@
+.hide-on-tablet {
+    @include responsive(Tablet) {
+        display: none;
+    }
+}
+
+.hide-on-pc {
+    @include responsive(PC) {
+        display: none;
+    }
+}
+
+.hide-on-mobile {
+    @include responsive(Mobile) {
+        display: none;
+    }
+}
+
+.hide-on-MobileTablet {
+    @include responsive(MobileTablet){
+        // border: 1px solid #000;
+        display: none;
+    }
+}

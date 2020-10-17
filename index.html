@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- https://thesiteslinger.com/blog/tutorial-how-to-code-your-psd-into-a-html-css-layout -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container grid wide">
+
+            <div class="header__container-logo">
+                <img src="/asset/images/logo.png" alt="" class="header__container-logo-img">
+                <span class="header__container-logo-slogan hide-on-mobile">Your nice slogan</span>
+            </div>
+            <!-- Nav mobile Tablet -->
+            <div class="overlay" onclick="menu();" id="overlay"></div>
+
+            <div class="header__nav-mt hide-on-pc" onclick="menu();">
+                <div class="header__nav-mt-open"></div>
+                <div class="header__nav-mt-open"></div>
+                <div class="header__nav-mt-open"></div>
+            </div>
+
+            <nav class="header__nav-mt-content" id="nav-mt">
+                <ul class="header__nav-list">
+                    <p class="header__nav-mt-close" onclick="menu();">Đóng</p>
+                    <hr style="width: 90%; margin: 0 auto;">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            How it works
+                            <i class="fas fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            Sign up
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            Login
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Nav mobile Tablet -->
+            
+
+            
+            <nav class="header__nav hide-on-MobileTablet">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="fas fa-question-circle" aria-hidden="true"></i>
+                            How it works
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            Sign up
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-item-link">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- below header
+        Big image and some text
+    -->
+    <div class="hero">
+        <div class="hero__container grid wide">
+            <h1 class="hero__title">Don't ignore your dream</h1>
+            <p class="hero__main">
+                <b>The 5 regrets</b>
+                paint a portrait of post-industrial man, who shrinks himself into a shape that fits his circumstances,
+                then turns dutifully till he stops.
+            </p>
+            <div class="hero__more">
+                <a href="#" class="btn btn--green">See how it works</a>
+                <a href="#" class="btn btn--blue">Join us</a>
+            </div>
+
+        </div>
+    </div>
+
+    <main class="middle">
+        <div class="middle__container grid wide">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="middle__content">
+                            <div class="row lg-gutter">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="middle__content-item">
+                                        <div class="middle__content-after"></div>
+                                        <div class="middle__content-before"></div>
+
+                                        <div class="middle__content-main">
+                                            <div class="middle__content-img">
+                                                <img src="/asset/images/content-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="middle__infor">
+                                                <img src="/asset/images/avar-2.jpg" alt="" class="middle__infor-img">
+                                                <div class="middle__infor-text">
+                                                    <h4 class="middle__infor-text-heading">You neglect your friends is
+                                                        that you right?</h4>
+                                                    <p class="middle__infor-text-sentence">Valerie Adams. Moldova. 19.
+                                                        Not twenty right bro and that is not even be twenty-one right
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="width: 319px; margin: 0 auto; background-color: #373737 ;" class="hide-on-tablet hide-on-pc">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="middle__content-item">
+                                        <div class="middle__content-after"></div>
+                                        <div class="middle__content-before"></div>
+
+                                        <div class="middle__content-main">
+                                            <div class="middle__content-img">
+                                                <img src="/asset/images/content-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="middle__infor">
+                                                <img src="/asset/images/avar-3.jpg" alt="" class="middle__infor-img">
+                                                <div class="middle__infor-text">
+                                                    <h4 class="middle__infor-text-heading">You neglect your friends is
+                                                        that you right?</h4>
+                                                    <p class="middle__infor-text-sentence">Valerie Adams. Moldova. 19.
+                                                        Not twenty right bro and that is not even be twenty-one right
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="width: 319px; margin: 0 auto; background-color: #373737 ;" class="hide-on-tablet hide-on-pc">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="middle__content-item">
+                                        <div class="middle__content-after"></div>
+                                        <div class="middle__content-before"></div>
+
+                                        <div class="middle__content-main">
+                                            <div class="middle__content-img">
+                                                <img src="/asset/images/content-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="middle__infor">
+                                                <img src="/asset/images/avar-1.jpg" alt="" class="middle__infor-img">
+                                                <div class="middle__infor-text">
+                                                    <h4 class="middle__infor-text-heading">You neglect your friends is
+                                                        that you right?</h4>
+                                                    <p class="middle__infor-text-sentence">Valerie Adams. Moldova. 19.
+                                                        Not twenty right bro and that is not even be twenty-one right
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="news">
+        <div class="grid wide">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="news__content">
+                            <div class="row lg-gutter">
+                                <div class="col l-4 m-12 c-11 center">
+                                    <div class="news__item">
+                                        <img src="/asset/images/img-circle-1.jpg" alt="" class="news__item-img">
+                                        <div class="news__item-cmt">
+                                            <p class="news__item-cmt-date">Oct 18</p>
+                                            <a class="news__item-cmt-content">
+                                                I would like to avoid making these mistakes
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-12 c-11 center">
+                                    <div class="news__item">
+                                        <img src="/asset/images/img-circle-2.jpg" alt="" class="news__item-img">
+                                        <div class="news__item-cmt">
+                                            <p class="news__item-cmt-date">Oct 18</p>
+                                            <a class="news__item-cmt-content">
+                                                I would like to avoid making these mistakes cause those mistakes will
+                                                make be better. you know this is a good things
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-12 c-11 center">
+                                    <div class="news__item">
+                                        <img src="/asset/images/img-circle-3.jpg" alt="" class="news__item-img">
+                                        <div class="news__item-cmt">
+                                            <p class="news__item-cmt-date">Oct 18</p>
+                                            <a class="news__item-cmt-content">
+                                                I would like to avoid making these mistakes
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature grid wide">
+        <div class="hide-on-MobileTablet">
+            <div class="feature-pc ">
+                <div class="feature__title">Featured on:</div>
+                <ul class="feature__list">
+                    <li class="feature__item">
+                        <a href="#" class="feature__item-link">
+                            <img src="asset/images/logo-new-texas.png" class="feature__item-img" height="28" width="262"
+                                alt="">
+                        </a>
+                    </li>
+                    <li class="feature__item">
+                        <a href="#" class="feature__item-link">
+                            <img src="asset/images/wooden.png" class="feature__item-img" height="29" width="147" alt="">
+                        </a>
+                    </li>
+                    <li class="feature__item">
+                        <a href="#" class="feature__item-link">
+                            <img src="asset/images/logo-vremy.png" class="feature__item-img" height="22" width="112"
+                                alt="">
+                        </a>
+                    </li>
+                    <li class="feature__item">
+                        <a href="#" class="feature__item-link">
+                            <img src="asset/images/logo-open-book.png" class="feature__item-img" height="29" width="217"
+                                alt="">
+                        </a>
+                    </li>
+                    <li class="feature__item">
+                        <a href="#" class="feature__item-link">
+                            <img src="asset/images/logo-twitter.png" class="feature__item-img" height="29" width="36"
+                                alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-mobile hide-on-pc">
+            <div class="feature__title">Featured on:</div>
+            <div class="row">
+                <div class="col l-12">
+                    <div class="feature__mobile-main">
+                        <div class="row">
+                            <div class="col m-6 c-12 feature__mobile-main-content">
+                                <div class="feature__mobile-content">
+                                    <div class="feature__item">
+                                        <a href="#" class="feature__item-link">
+                                            <img src="asset/images/logo-new-texas.png" class="feature__item-img"
+                                                height="28" width="262" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col m-6 c-12 feature__mobile-main-content">
+                                <div class="feature__mobile-content">
+                                    <div class="feature__item">
+                                        <a href="#" class="feature__item-link">
+                                            <img src="asset/images/logo-open-book.png" class="feature__item-img"
+                                                height="29" width="217" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col m-6 c-12 feature__mobile-main-content">
+                                <div class="feature__mobile-content">
+                                    <div class="feature__item">
+                                        <a href="#" class="feature__item-link">
+                                            <img src="asset/images/wooden.png" class="feature__item-img" height="29"
+                                                width="147" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="col m-6 c-12 feature__mobile-main-content">
+                                <div class="feature__mobile-content">
+                                    <div class="feature__item">
+                                        <a href="#" class="feature__item-link">
+                                            <img src="asset/images/logo-vremy.png" class="feature__item-img" height="22"
+                                                width="112" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col m-6 c-12 feature__mobile-main-content">
+                                <div class="feature__mobile-content">
+                                    <div class="feature__item">
+                                        <a href="#" class="feature__item-link">
+                                            <img src="asset/images/logo-twitter.png" class="feature__item-img"
+                                                height="29" width="36" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-8 m-8 c-12">
+                        <nav class="footer__nav row lg-gutter">
+                            <div class="col l-2 m-3 c-6">
+                                <h4 class="footer__heading">MAIN</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Start Here</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Portfolio</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Meet Us</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Blog</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-2 m-3 c-6">
+                                <h4 class="footer__heading">COMPANY</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">About</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Help</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Support</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Jobs</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Directory</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-2 m-3 c-6">
+                                <h4 class="footer__heading">ONE MORE</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Meetups</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Handbook</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Privacy</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">API</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Equipment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-2 m-3 c-6">
+                                <h4 class="footer__heading">THE LAST ONE</h4>
+                                <ul class="footer__list">
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Meetups</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Handbook</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Privacy</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">API</a>
+                                    </li>
+                                    <li class="footer__list-item">
+                                        <a href="#" class="footer__list-item-link">Equipment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col l-4 m-4 c-0">
+                        <div class="footer__contact">
+                            <i class="fab fa-twitter footer__contact-icon" aria-hidden="true"></i>
+                            <i class="fab fa-facebook-square footer__contact-icon" aria-hidden="true"></i>
+                            <i class="fab fa-vimeo footer__contact-icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="footer__copy-right">
+                            <p>© 2020 be happy<br>
+                                <a href="#" class="footer__copy-right-link">Privacy Policy</a>
+                                <span>•</span>
+                                <a href="#" class="footer__copy-right-link">Terms of Service</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l-0 m-0 c-12">
+                        <div class="footer__contact">
+                            <i class="fab fa-twitter footer__contact-icon" aria-hidden="true"></i>
+                            <i class="fab fa-facebook-square footer__contact-icon" aria-hidden="true"></i>
+                            <i class="fab fa-vimeo footer__contact-icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="footer__copy-right">
+                            <p>© 2020 be happy<br>
+                                <a href="#" class="footer__copy-right-link">Privacy Policy</a>
+                                <span>•</span>
+                                <a href="#" class="footer__copy-right-link">Terms of Service</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./asset/main.js"></script>
+</body>
+
+</html>
